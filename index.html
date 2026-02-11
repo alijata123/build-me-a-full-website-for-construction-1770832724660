@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Co.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+:root {
+    --primary: #005f73;
+    --secondary: #0a9396;
+    --accent: #94d2bd;
+    --text: #e9d8a6;
+    --bg: #001219;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+nav,
+.hero,
+.features,
+.about,
+.services,
+.testimonials,
+.gallery,
+.contact,
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Glassmorphism Styles */
+.glass-card,
+.feature-card,
+section,
+nav,
+.btn {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav>...</nav>
+    <section class="hero">...</section>
+    <section class="features">...</section>
+    <section class="about">...</section>
+    <section class="services">...</section>
+    <section class="testimonials">...</section>
+    <section class="gallery">...</section>
+    <section class="contact">...</section>
+    <footer>...</footer>
+</body>
+</html>
